@@ -1,0 +1,21 @@
+[flake8]
+exclude =
+    .git,
+    .vscode,
+    venv,
+    .dockerignore,
+    .env,
+    .env.dist,
+    .gitignore,
+    docker-compose.yml,
+    Dockerfile,
+    requirements.txt
+    __pycache__,
+    migrations,
+    __init__.py,
+    settings.py,
+    manage.py
+max-line-length = 79
+per-file-ignores =
+    ./app/apps/blog/apps.py: F401,
+    ./app/apps/blog/admin.py: E501
