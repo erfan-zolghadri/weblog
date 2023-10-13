@@ -185,7 +185,7 @@ class PasswordResetAPIView(GenericAPIView):
 class PasswordResetConfirmAPIView(GenericAPIView):
     def get(self, request, token, *args, **kwargs):
         try:
-            decoded = decode(token, config("SECRET_KEY"), algorithms=["HS256"])
+            decode(token, config("SECRET_KEY"), algorithms=["HS256"])
         except ExpiredSignatureError:
             return Response(
                 {"detail": "Signature has been expired."},

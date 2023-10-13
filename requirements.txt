@@ -10,4 +10,6 @@ drf-yasg[validation]>=1.21.7,<1.22
 flake8>=6.1.0,<6.2
 pillow>=9.5.0,<9.6
 psycopg>=3.1.9,<3.2
+pytest>=7.4.2,<7.5
+pytest-django>=4.5.2,<4.6
 python-decouple>=3.8,<3.9

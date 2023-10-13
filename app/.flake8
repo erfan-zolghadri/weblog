@@ -17,5 +17,5 @@ exclude =
     manage.py
 max-line-length = 79
 per-file-ignores =
-    ./app/apps/blog/apps.py: F401,
-    ./app/apps/blog/admin.py: E501
+    ./apps/blog/apps.py: F401,
+    ./apps/blog/admin.py: E501
